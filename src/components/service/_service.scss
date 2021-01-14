@@ -1,0 +1,27 @@
+.services {
+  &__card {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 280px;
+  }
+  &__card-title {
+    margin: 0;
+    margin-top: 17px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2C3036;
+  }
+  &__card-text {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
+  }
+  &__button-wrapper {
+    margin-top: 20px;
+    width: 180px;
+  }
+}

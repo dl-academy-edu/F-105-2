@@ -44,60 +44,32 @@
 
 /* SERVICE BLOCK */
 
-.services-title {
-  margin: 0 auto;
-  margin-top: 80px;
-  width: 650px;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 50px;
-  text-transform: uppercase;
-  color: #00559D;
-  text-align: center;
-}
-
-.services-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: -20px;
-  margin-top: 50px;
-  list-style: none;
-}
-
-.service-card {
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  width: 280px;
-}
-
-.service-card-title {
-  margin: 0;
-  margin-top: 17px;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
-  color: #2C3036;
-}
-
-.service-card-text {
-  margin: 0;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 21px;
-  color: #2C3036;
-}
-
-.services-button-wrapper {
-  margin-top: 20px;
-  width: 180px;
+.services {
+    &__title {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 650px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00559D;
+    text-align: center;
+  }
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -20px;
+    margin-top: 50px;
+    list-style: none;
+  }
 }
 
 /* ABOUT US BLOCK */

@@ -32,68 +32,40 @@
         </section>
 
         <section class="services container">
-            <h2 class="services-title">Our most popular services</h2>
-            <ul class="services-list">
-                <li class="service-card">
-                    <img class="service-card-img" src="/static/images/carpet.jpg" alt="Carpet Cleaning" width="280"
-                        height="165">
-                    <h3 class="service-card-title">Carpet <br> Cleaning</h3>
-                    <p class="service-card-text">When you choose Chem-Dry, you get deeper clean, faster-drying carpet
-                        and healthier home for you.</p>
-                    <div class="services-button-wrapper">
-                        @@include('button/index.html', {
-                        "class": "",
-                        "text": "Learn More",
-                        "tag": "a",
-                        "href": "#"
-                        })
-                    </div>
-                </li>
-                <li class="service-card">
-                    <img class="service-card-img" src="/static/images/tile.jpg" alt="Tile & Grout Cleaning" width="280"
-                        height="165">
-                    <h3 class="service-card-title">Tile & Grout Cleaning</h3>
-                    <p class="service-card-text">One of the nicest touches to the basic architectural components of a
-                        homeis ceramic or stone tile in kitchens, bathrooms</p>
-                    <div class="services-button-wrapper">
-                        @@include('button/index.html', {
-                        "class": "",
-                        "text": "Learn More",
-                        "tag": "a",
-                        "href": "#"
-                        })
-                    </div>
-                </li>
-                <li class="service-card">
-                    <img class="service-card-img" src="/static/images/pet.jpg" alt="Pet Stain Removal" width="280"
-                        height="165">
-                    <h3 class="service-card-title">Pet Stain <br> Removal</h3>
-                    <p class="service-card-text">Here at Chem-Dry, we love our pets. They brighten up our day and
-                        they’re always there to support us, through thick</p>
-                    <div class="services-button-wrapper">
-                        @@include('button/index.html', {
-                        "class": "",
-                        "text": "Learn More",
-                        "tag": "a",
-                        "href": "#"
-                        })
-                    </div>
-                </li>
-                <li class="service-card">
-                    <img class="service-card-img" src="/static/images/cleaning.jpg" alt="Commercial Cleaning"
-                        width="280" height="165">
-                    <h3 class="service-card-title">Commercial Cleaning</h3>
-                    <p class="service-card-text">Companies spend millions of dollars on carpeting, upholstery, leather
-                        and area rugs</p>
-                    <div class="services-button-wrapper">
-                        @@include('button/index.html', {
-                        "class": "",
-                        "text": "Learn More",
-                        "tag": "a",
-                        "href": "#"
-                        })
-                    </div>
-                </li>
+            <h2 class="services__title">Our most popular services</h2>
+            <ul class="services__list">
+                @@include('service/index.html', {
+                    "img": "carpet.jpg",
+                    "alt": "Carpet Cleaning",
+                    "title": "Carpet Cleaning",
+                    "text": "When you choose Chem-Dry, you get deeper clean, faster-drying carpet and healthier home for you.",
+                    "href": "#",
+                    "class": ""
+                })
+                @@include('service/index.html', {
+                    "img": "tile.jpg",
+                    "alt": "Tile & Grout Cleaning",
+                    "title": "Tile & Grout Cleaning",
+                    "text": "One of the nicest touches to the basic architectural components of a homeis ceramic or stone tile in kitchens, bathrooms",
+                    "href": "#",
+                    "class": ""
+                })
+                @@include('service/index.html', {
+                    "img": "pet.jpg",
+                    "alt": "Pet Stain Removal",
+                    "title": "Pet Stain Removal",
+                    "text": "Here at Chem-Dry, we love our pets. They brighten up our day and they’re always there to support us, through thick",
+                    "href": "#",
+                    "class": ""
+                })
+                @@include('service/index.html', {
+                    "img": "cleaning.jpg",
+                    "alt": "Commercial Cleaning",
+                    "title": "Commercial Cleaning",
+                    "text": "Companies spend millions of dollars on carpeting, upholstery, leather and area rugs",
+                    "href": "#",
+                    "class": ""
+                })
             </ul>
         </section>
         <section class="about-us container">
