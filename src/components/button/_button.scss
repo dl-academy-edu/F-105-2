@@ -1,0 +1,38 @@
+.button {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #008752;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #26CD8B;
+}
+
+.button:active {
+  background: #005232;
+}
+
+.button-secondary {
+  background: #95459A;
+}
+
+.button-secondary:hover {
+  background: #D665DD;
+}
+
+.button-secondary:active {
+  background: #722A77;
+}

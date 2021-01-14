@@ -1,44 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="/common.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/static/fonts/oswald.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico">
     <title>Главная</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="index-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Главная</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на главной странице
-        </h2>
-        <div class="parallax-card">
-          <div class="parallax-card__wrapper-img">
-            <img
-              class="parallax-card__img"
-              src="static/images/cactus.jpg"
-              alt="Картинка кактуса"
-            />
-          </div>
+</head>
 
-          <div class="parallax-card__description">
-            <p class="parallax-card__paragraph">Кактус маминой подруги</p>
-            <p class="parallax-card__paragraph">
-              Не нужно поливать и никогда не сохнет
-            </p>
-          </div>
-        </div>
-      </div>
+<body>
+    @@include('header/index.html')
+    <main>
+        <section class="poster">
+            <div class="container">
+                <div class="poster-wrapper">
+                    <h1 class="poster-title">The world’s leading cleaning company</h1>
+                    <div class="poster-button-wrapper">
+                        @@include('button/index.html', {
+                        "class": "poster-button button-secondary poster-button_js",
+                        "text": "Get a Free Estimate",
+                        "tag": "a",
+                        "href": "#"
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services container">
+            <h2 class="services-title">Our most popular services</h2>
+            <ul class="services-list">
+                <li class="service-card">
+                    <img class="service-card-img" src="/static/images/carpet.jpg" alt="Carpet Cleaning" width="280"
+                        height="165">
+                    <h3 class="service-card-title">Carpet <br> Cleaning</h3>
+                    <p class="service-card-text">When you choose Chem-Dry, you get deeper clean, faster-drying carpet
+                        and healthier home for you.</p>
+                    <div class="services-button-wrapper">
+                        @@include('button/index.html', {
+                        "class": "",
+                        "text": "Learn More",
+                        "tag": "a",
+                        "href": "#"
+                        })
+                    </div>
+                </li>
+                <li class="service-card">
+                    <img class="service-card-img" src="/static/images/tile.jpg" alt="Tile & Grout Cleaning" width="280"
+                        height="165">
+                    <h3 class="service-card-title">Tile & Grout Cleaning</h3>
+                    <p class="service-card-text">One of the nicest touches to the basic architectural components of a
+                        homeis ceramic or stone tile in kitchens, bathrooms</p>
+                    <div class="services-button-wrapper">
+                        @@include('button/index.html', {
+                        "class": "",
+                        "text": "Learn More",
+                        "tag": "a",
+                        "href": "#"
+                        })
+                    </div>
+                </li>
+                <li class="service-card">
+                    <img class="service-card-img" src="/static/images/pet.jpg" alt="Pet Stain Removal" width="280"
+                        height="165">
+                    <h3 class="service-card-title">Pet Stain <br> Removal</h3>
+                    <p class="service-card-text">Here at Chem-Dry, we love our pets. They brighten up our day and
+                        they’re always there to support us, through thick</p>
+                    <div class="services-button-wrapper">
+                        @@include('button/index.html', {
+                        "class": "",
+                        "text": "Learn More",
+                        "tag": "a",
+                        "href": "#"
+                        })
+                    </div>
+                </li>
+                <li class="service-card">
+                    <img class="service-card-img" src="/static/images/cleaning.jpg" alt="Commercial Cleaning"
+                        width="280" height="165">
+                    <h3 class="service-card-title">Commercial Cleaning</h3>
+                    <p class="service-card-text">Companies spend millions of dollars on carpeting, upholstery, leather
+                        and area rugs</p>
+                    <div class="services-button-wrapper">
+                        @@include('button/index.html', {
+                        "class": "",
+                        "text": "Learn More",
+                        "tag": "a",
+                        "href": "#"
+                        })
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="about-us container">
+            <div class="about-us-wrapper">
+                <h2 class="about-us-title">Why Haley’s Chem-Dry?</h2>
+                <p class="about-us-text">Chem-Dry’s mission is helping people live healthy lives, which starts with
+                    clean carpets and a healthy home. Our proprietary hot carbonating extraction cleaning process
+                    penetrates deep into the fibers, removing an average of 98% of common
+                    household allergens from carpets, upholstery and rugs and 89% of the airborne bacteria in your home
+                    when a sanitizer is added.* Plus, our green-certified solution, The Natural®, contains no soaps or
+                    detergents so it’s safe and non-toxic
+                    for your family and pets.
+                </p>
+                <div class="about-us-button-wrapper">
+                    <a href="#" class="about-us-button button">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="partners container">
+            <h2 class="partners-title visually-hidden">Our Partners</h2>
+            <ul class="partners-list">
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-we-proudly-use.png" alt="green seal image" width="90"
+                            height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-issa-member.png" alt="issa member image" width="90"
+                            height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-insuarance.png" alt="insuarance image" width="90"
+                            height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-expertise.png" alt="expertise image" width="90"
+                            height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-chamber-of-commerce.png" alt="verified image"
+                            width="90" height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-satisfaction.png" alt="satisfaction garauted image"
+                            width="90" height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-24.png" alt="image 24" width="90" height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partner-core-training.png" alt="image core training" width="90"
+                            height="90"></a>
+                </li>
+                <li class="partners-item">
+                    <a href="#"><img src="/static/images/partnert-green-seal.png" alt="green seal image" width="90"
+                            height="90"></a>
+                </li>
+            </ul>
+        </section>
+        @@include('map/index.html')
     </main>
     @@include('footer/index.html')
+    <div class="contact-popup-overlay">
+        <section class="contact-popup">
+            <form accept="" method="post" class="popup-form">
+                <div class="popup-form__field-wrapper">
+                    <div class="popup-form__filed">
+                        <input id="name-input" class="popup-form__input" type="text" placeholder="Ivan Ivanov">
+                        <label for="name-input">Name</label>
+                    </div>
+                    <div class="popup-form__filed">
+                        <input id="phone-input" class="popup-form__input" type="text" placeholder="">
+                        <label for="phone-input">Phone</label>
+                    </div>
+                </div>
+
+                <div class="popup-form__filed">
+                    <input id="email-input" class="popup-form__input" type="email" placeholder="">
+                    <label for="email-input">E-mail</label>
+                </div>
+
+                <div class="popup-form__filed">
+                    <textarea id="textarea" class="popup-form__input" rows="1"></textarea>
+                    <label for="textarea">Message</label>
+                </div>
+                <div class="popup-form__button-wrapper">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+            <button type="button" class="button-close"><span class="visually-hidden">Close Popup</span></button>
+        </section>
+    </div>
     <script src="scripts.js"></script>
-  </body>
+</body>
+
 </html>
