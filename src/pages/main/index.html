@@ -15,13 +15,14 @@
 <body>
     @@include('header/index.html')
     <main>
+        @@include('chat/index.html')
         <section class="poster">
             <div class="container">
                 <div class="poster-wrapper">
                     <h1 class="poster-title">The world’s leading cleaning company</h1>
                     <div class="poster-button-wrapper">
                         @@include('button/index.html', {
-                        "class": "poster-button button-secondary poster-button_js",
+                        "class": "poster-button button__secondary poster-button_js",
                         "text": "Get a Free Estimate",
                         "tag": "a",
                         "href": "#"

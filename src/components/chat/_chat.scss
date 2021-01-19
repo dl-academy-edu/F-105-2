@@ -1,0 +1,105 @@
+@keyframes chat {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+
+.chat {
+  position: fixed;
+  height: 488px;
+  width: 300px;
+  background: #fff;
+  bottom: 40px;
+  right: 40px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+  color: #27253f;
+  z-index: 2;
+  overflow: hidden;
+  &__header {
+    background: #f6f6f8;
+    padding: 15px;
+    border: 1px solid #d9d9db;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  &__desc {
+    font-size: 12px;
+    color: #6b6a6a;
+  }
+  &__close {
+    background: url(/../../static/images/back-button.svg) no-repeat;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  &__message-container {
+    width: 100%;
+    max-height: 0;
+    animation: chat 2s forwards;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i + s;
+      }
+    }
+  }
+
+  &__message {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+    width: 75%;
+    position: relative;
+    border-radius: 10px;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      bottom: 0;
+    }
+  }
+
+  .message-right {
+    background: #2198F4;
+    color: #fff;
+    margin: 0 15px 15px auto;
+    &:after {
+      right: -6px;
+      background: url(/../../static/images/blue-tail.svg) no-repeat;
+    }
+
+  }
+  .message-left {
+    background: #E4E3E8;
+    margin: 0 auto 15px 15px;
+    &:after {
+      left: -6px;
+      background: url(/../../static/images/gray-tail.svg) no-repeat;
+    }
+  }
+}
