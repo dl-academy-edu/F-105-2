@@ -1,0 +1,39 @@
+.svg {
+    cursor: pointer;
+    &:hover {
+        .eyebrow-one {
+            transform: translateY(-2px);
+        }
+        .eye-one,
+        .eye-one_mini,
+        .eye-two,
+        .eye-two_mini {
+            transform: translateY(2px);
+        }
+    }
+    &:active {
+        .eyebrow-one {
+            transform: translateY(0);
+        }
+        .eyebrow-two {
+            transform: translateY(-2px);
+        }
+        .eye-one,
+        .eye-one_mini {
+            transform: translate(-4px, -2px);
+        }
+        .eye-two,
+        .eye-two_mini {
+            transform: translateY(-2px);
+        }
+    }
+
+    .eyebrow-one,
+    .eyebrow-two,
+    .eye-one,
+    .eye-two,
+    .eye-two_mini,
+    .eye-one_mini  {
+        transition: transform .3s;
+    }
+}
