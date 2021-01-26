@@ -35,5 +35,18 @@ popupContact.addEventListener('click', function(evt) {
 })
 
 
+var buttonMobileMenu = document.querySelector('.header__humburger_js');
+var buttonCloseMobileMenu = document.querySelector('.mobile-menu__close_js');
+var mobileMenu = document.querySelector('.mobile-menu');
+
+buttonMobileMenu.addEventListener('click', function () {
+    mobileMenu.classList.add('.mobile-menu__open');
+})
+
+buttonCloseMobileMenu.addEventListener('click', function() {
+    popupContact.classList.remove('.mobile-menu__open');
+})
+
+
 
 

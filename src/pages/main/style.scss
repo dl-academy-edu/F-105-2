@@ -47,21 +47,22 @@
 .services {
     &__title {
     margin: 0 auto;
-    margin-top: 80px;
-    width: 650px;
+    margin-top: 30px;
     font-weight: bold;
-    font-size: 42px;
-    line-height: 50px;
+    font-size:24px;
+    line-height: 29px;
     text-transform: uppercase;
     color: #00559D;
     text-align: center;
+    @media (min-width: 1024px) {
+      font-size: 42px;
+      line-height: 50px;
+      margin-top: 80px;
+    }
   }
   &__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-left: -10px;
@@ -69,6 +70,9 @@
     margin-bottom: -20px;
     margin-top: 50px;
     list-style: none;
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -132,31 +136,42 @@
 /* PARTNERS */
 
 .partners {
-  margin-top: 140px;
+  margin-top: 50px;
+  @media (min-width: 1024px) {
+    margin-top: 140px;
+  }
 }
 
 .partners-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
-}
+  flex-wrap: wrap;
+  @media (min-width: 1024px) {
+    margin-top: 140px;
+  }
+  @media (max-width: 1023px) {
+    justify-content: center;
+    margin: 0 -20px;
+  }
 
-.partners-item a {
-  opacity: 0.5;
-}
+  .partners-item {
+    @media (max-width: 1023px) {
+      margin: 0 20px 10px;
+    }
+  }
 
-.partners-item a:hover {
-  opacity: 1;
-}
-
-.partners-item a:active {
-  opacity: 0.2;
+  a {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 0.2;
+    }
+  }
 }
 
 /* POPUP STYLES */
