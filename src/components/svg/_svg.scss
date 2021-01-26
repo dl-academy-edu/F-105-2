@@ -1,5 +1,10 @@
 .svg {
     cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    z-index: 2;
+    height: auto;
     &:hover {
         .eyebrow-one {
             transform: translateY(-2px);

@@ -25,7 +25,7 @@ img {
   padding: 0 110px;
 }
 
-@mixin button($font-size:10px, $background:$green) {
+@mixin button($font-size:15px, $background:$green) {
   display: block;
   padding-top: 11px;
   padding-bottom: 11px;
