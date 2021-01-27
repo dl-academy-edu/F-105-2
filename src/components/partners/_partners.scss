@@ -1,0 +1,46 @@
+.partners {
+    margin-top: 50px;
+    @include _1024 {
+      margin-top: 140px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        @include _1024 {
+          margin-top: 140px;
+        }
+        @media (max-width: 1023px) {
+          justify-content: center;
+          margin: 0 -20px;
+        }
+      
+        a {
+          opacity: 0.5;
+          &:hover {
+            opacity: 1;
+          }
+          &:active {
+            opacity: 0.2;
+          }
+        }
+      }
+    &__item {
+        @media (max-width: 1023px) {
+            margin: 0 20px 10px;
+        }
+    }
+    a {
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+        &:active {
+          opacity: 0.2;
+        }
+      }
+  }

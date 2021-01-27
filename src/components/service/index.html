@@ -1,10 +1,37 @@
-<li class="services__card">
-  <img class="services__card-img" src="/static/images/@@img" alt="@@alt">
-  <h3 class="services__card-title">@@title</h3>
-  <p class="services__card-text">@@text</p>
-  <div class="services__button-wrapper">
-    <a href="@@href" class="button @@class">
-      Learn More
-    </a>
-  </div>
-</li>
+<section class="services container">
+  <h2 class="services__title">Our most popular services</h2>
+  <ul class="services__list">
+      @@include('service/service-card.html', {
+          "img": "carpet.jpg",
+          "alt": "Carpet Cleaning",
+          "title": "Carpet Cleaning",
+          "text": "When you choose Chem-Dry, you get deeper clean, faster-drying carpet and healthier home for you.",
+          "href": "#",
+          "class": ""
+      })
+      @@include('service/service-card.html', {
+          "img": "tile.jpg",
+          "alt": "Tile & Grout Cleaning",
+          "title": "Tile & Grout Cleaning",
+          "text": "One of the nicest touches to the basic architectural components of a homeis ceramic or stone tile in kitchens, bathrooms",
+          "href": "#",
+          "class": ""
+      })
+      @@include('service/service-card.html', {
+          "img": "pet.jpg",
+          "alt": "Pet Stain Removal",
+          "title": "Pet Stain Removal",
+          "text": "Here at Chem-Dry, we love our pets. They brighten up our day and they’re always there to support us, through thick",
+          "href": "#",
+          "class": ""
+      })
+      @@include('service/service-card.html', {
+          "img": "cleaning.jpg",
+          "alt": "Commercial Cleaning",
+          "title": "Commercial Cleaning",
+          "text": "Companies spend millions of dollars on carpeting, upholstery, leather and area rugs",
+          "href": "#",
+          "class": ""
+      })
+  </ul>
+</section>

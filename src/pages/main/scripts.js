@@ -35,18 +35,15 @@ popupContact.addEventListener('click', function(evt) {
 })
 
 
-var buttonMobileMenu = document.querySelector('.header__humburger_js');
-var buttonCloseMobileMenu = document.querySelector('.mobile-menu__close_js');
-var mobileMenu = document.querySelector('.mobile-menu');
-
-buttonMobileMenu.addEventListener('click', function () {
-    mobileMenu.classList.add('.mobile-menu__open');
+var buttonMobileHeader = document.querySelector('.header__humburger_js');
+var buttonCloseMobileHeader = document.querySelector('.mobile-menu__close_js');
+var mobileHeader = document.querySelector('.mobile-menu_js');
+ 
+ 
+buttonMobileHeader.addEventListener('click', function () {
+    mobileHeader.classList.add('mobile-menu__open');
 })
-
-buttonCloseMobileMenu.addEventListener('click', function() {
-    popupContact.classList.remove('.mobile-menu__open');
+ 
+buttonCloseMobileHeader.addEventListener('click', function() {
+    mobileHeader.classList.remove('mobile-menu__open');
 })
-
-
-
-

@@ -1,0 +1,40 @@
+.poster {
+    background-color: #DAE2E5;
+    background-image: url('/static/images/poster-image.png'), -webkit-gradient(linear, left top, left bottom, color-stop(16.53%, #E0E7ED), color-stop(102.51%, #DAE2E5));
+    background-image: url('/static/images/poster-image.png'), -o-linear-gradient(top, #E0E7ED 16.53%, #DAE2E5 102.51%);
+    background-image: url('/static/images/poster-image.png'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+    &__wrapper {
+      padding-top: 150px;
+      padding-bottom: 286px;
+    }
+    &__title {
+      margin: 0;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 40px;
+      color: $blue;
+      letter-spacing: -0.7px;
+      @include _1024 {
+        font-size: 90px;
+        line-height: 90px;
+      }
+      @mixin _768-1023 {
+        font-size:60px;
+        line-height: 60px;
+      }
+    }
+    &__button {
+      padding: 16px;
+      margin-top: 40px;
+      max-width: 360px;
+      font-size: 18px;
+      line-height: 22px;
+      @include _1024 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }

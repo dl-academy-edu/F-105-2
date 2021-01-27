@@ -1,24 +1,3 @@
-$green: #008752;
-
-
-body {
-  margin: 0;
-  font-family: 'Lato', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  color: black;
-}
-
-img {
-  max-width: 100%;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1400px;
@@ -28,57 +7,9 @@ img {
   }
 }
 
-@mixin button($font-size:15px, $background:$green) {
-  display: block;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 100%;
-  font-weight: bold;
-  font-size: $font-size;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background:$background;
-  text-decoration: none;
-  text-align: center;
-  border: 0;
-  cursor: pointer;
-  transition: all .4s;
-  &:hover {
-    background: #26CD8B;
-  }
-  &:active {
-    background: #005232;
-  }
-  &__secondary {
-    background: #95459A;
-    &:hover {
-      background: #D665DD;
-    }
-    &:active {
-      background: #722A77;
-    }
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-
 // Подключение компонентов
+@import "./media-mixins";
+@import "./vars";
 @import "./header/header";
 @import "./footer/footer";
 @import "./button/button";
@@ -86,3 +17,7 @@ img {
 @import "./chat/chat";
 @import "./svg/svg";
 @import "./map/map";
+@import "./about/about";
+@import "./banner/banner";
+@import "./partners/partners";
+@import "./popup/popup";

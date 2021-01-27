@@ -5,50 +5,42 @@
   background-image: url('/static/images/map.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.map-wrapper {
-  padding-top: 50px;
-  padding-right: 44px;
-  padding-left: 44px;
-  padding-bottom: 26px;
-  background: #008752;
-  width: 380px;
-}
-
-.map-company-name {
-  margin: 0;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 36px;
-  color: #FFFFFF;
-}
-
-.map-address {
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 23px;
-  font-size: 15px;
-  line-height: 18px;
-  color: #FFFFFF;
-}
-
-.map-tel {
-  font-size: 15px;
-  line-height: 18px;
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.map-tel:hover {
-  opacity: 0.7;
-}
-
-.map-tel:active {
-  opacity: 0.5;
-}
-
-.map-button-wrapper {
-  margin-top: 23px;
-  width: 180px;
+  &__wrapper {
+    padding-top: 50px;
+    padding-right: 44px;
+    padding-left: 44px;
+    padding-bottom: 26px;
+    background:$green;
+    max-width: 380px;
+  }
+  &__company-name {
+    margin: 0;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: $white;
+  }
+  &__address {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 23px;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+  }
+  &__tel {
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__button-wrapper {
+    margin-top: 23px;
+  }
 }

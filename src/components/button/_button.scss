@@ -1,3 +1,45 @@
 .button {
- @include button($background: $green);
+ display: block;
+ padding: 11px 20px;
+ width: 100%;
+ max-width: 180px;
+ font-weight: bold;
+ font-size: 14px;
+ line-height: 16px;
+ text-transform: uppercase;
+ color: $white;
+ background:$green;
+ text-decoration: none;
+ text-align: center;
+ border: 0;
+ cursor: pointer;
+ transition: all .4s;
+
+ @include _1024 {
+	font-size: 15px;
+	line-height: 18px;
 }
+
+ &:hover {
+		background: $light-green;
+ }
+ &:active {
+		background: $dark-green;
+ }
+ &__secondary {
+		background:$purple;
+		&:hover {
+			background:$light-purple;
+		}
+		&:active {
+			background: $dark-purple;
+		}
+ }
+}
+
+//  @include button($background: $green);
+
+// @mixin button($font-size:14px, $background:$green) {
+//     font-size: $font-size;
+//     background: $background;
+// }
