@@ -13,10 +13,6 @@
       line-height: 50px;
       margin-top: 80px;
     }
-    // @include _768-1023 {
-    //   font-size:36px;
-    //   line-height: 43px;
-    // }
   }
   &__list {
     display: flex;
@@ -44,10 +40,7 @@
   &__img-wrapper {
     position: relative;
     overflow: hidden;
-    padding-bottom: 60%;
-    // display: flex;
-    // align-items: center;
-    // background: #000; это после width: none показать
+    padding-bottom: 59%;
   }
   &__card-img {
     position: absolute;
@@ -56,8 +49,7 @@
     transform: translate(-50%,-50%);
     width: none;
     min-width: 100.5%;
-    // height: 100.5%;
-
+    min-height: 100.5%;
   }
   &__card-title {
     margin: 0;
