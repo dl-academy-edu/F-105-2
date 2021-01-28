@@ -7,8 +7,12 @@
     background-position: center bottom;
     background-size: auto;
     &__wrapper {
-      padding-top: 150px;
-      padding-bottom: 286px;
+      padding-top: 55px;
+      padding-bottom: 305px;
+      @include _768 {
+        padding-top: 150px;
+        padding-bottom: 286px;
+      }
     }
     &__title {
       margin: 0;
@@ -21,10 +25,10 @@
         font-size: 90px;
         line-height: 90px;
       }
-      @mixin _768-1023 {
-        font-size:60px;
-        line-height: 60px;
-      }
+      // @include _768-1023 {
+      //   font-size:60px;
+      //   line-height: 60px;
+      // }
     }
     &__button {
       padding: 16px;

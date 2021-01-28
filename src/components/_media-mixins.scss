@@ -27,9 +27,3 @@ $msm: 767px;
         @content;
     }
 }
-
-@mixin _768-1023 {
-    @media (min-width: $sm) and (max-width: $sm) {
-        @content;
-    }
-}

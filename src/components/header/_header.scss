@@ -14,9 +14,9 @@
     @include _1024 {
       max-width: 142px;
     }
-    @mixin _768-1023 {
-      max-width: 97px;
-    }
+    // @include _768-1023 {
+    //   max-width: 97px;
+    // }
 
     &:hover {
       opacity: 0.7;

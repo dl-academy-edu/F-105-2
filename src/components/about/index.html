@@ -15,7 +15,12 @@
             </div>
         </div>
         <div class="about-us__right">
-            <img src="/static/images/about-us-image.jpg" alt="">
+            <picture>
+                <source srcset="/static/images/about-us-image-mobile.jpg?10, /static/images/about-us-image-mobile2x.jpg?11 2x" media="(max-width:767px)">
+                <source srcset="/static/images/about-us-image-tablet.jpg?12, /static/images/about-us-image-tablet2x.jpg?13 2x" media="(max-width:1024px)">
+                <source srcset="/static/images/about-us-image.jpg?14, /static/images/about-us-image2x.jpg?15 2x">
+                <img srcset="/static/images/about-us-image.jpg?16" alt="about-us">
+            </picture>
         </div>
         
     </div>
